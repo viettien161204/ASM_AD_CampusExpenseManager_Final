@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Nút Back -->
+    <Button
+        android:id="@+id/Search_back"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_gravity="start"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:text="Back"
+        android:textColor="@color/white" />
+
+    <!-- EditText -->
+    <EditText
+        android:id="@+id/edit_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter hour Or day Or month"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edit_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Nút Search -->
+    <Button
+        android:id="@+id/button_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="@color/white"
+        android:elevation="4dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search_results"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/background_light"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
